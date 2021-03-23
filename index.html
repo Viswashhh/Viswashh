@@ -1,46 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-  
-<meta charset="UTF-8">
-<title>The Unlucky 13</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-  
-<body>
+<body> 
 
-<!--Introduction Here-->
-
-
-<!--Ends-->
-<p style="text-align:center"><i class="fa fa-instagram" style="font-size:45px;color:red;"></i> </p>
-
-<p style="text-align:center"> <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>  <strong>इन्स्टाग्रामको तस्वीरहरू</strong>  <i class="fa fa-spinner fa-spin" style="font-size:24px"></i></p>
-
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-d9582c7e-efe7-45e3-819b-5fbe23b3a6b9"></div>
-
-<p style="text-align:center"><i class="fa fa-facebook-official" style="font-size:45px;color:red"></i> </p>
-<p style="text-align:center"> <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>   <strong>फेसबुकको तस्वीरहरू</strong>  <i class="fa fa-spinner fa-spin" style="font-size:24px"></i></p>
-
-
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-93944a13-29b2-487f-a604-fef1f82ecedd"></div>
+	<div id="adobe-dc-view"></div>
+	<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+		content:{promise: "<FILE_BLOB_PROMISE>"},
+		metaData:{fileName: "<FILE_NAME>"}
+		}, {});
+	});
+</script>
 
 
 
 
-<!-- Slides -->
-<iframe src="https://albumizr.com/a/FKR0" scrolling="yes" frameborder="0" allowfullscreen width="700" height="400"></iframe>
-	
 
-
-<!-- End Content -->
-</div>
 
 </body>
 </html>
